@@ -27,7 +27,7 @@ public class JUnitTimeoutTest {
     @Rule
     public Timeout timeout=new Timeout(5000);
 
-    @Test(timeout = 1)
+    @Test(timeout = 1000000000)
     public void testTimeout_0(){
         //TODO
         for(int i=0;i<10;i++){
@@ -35,7 +35,7 @@ public class JUnitTimeoutTest {
         }
     }
 
-    @Test(timeout = 1)
+    @Test(timeout = 100000)
     public void testTimeout_1(){
         //TODO
         for(int i=0;i<10;i++){
